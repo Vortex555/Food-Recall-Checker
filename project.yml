@@ -1,0 +1,35 @@
+name: Food Recall Checker
+options:
+  bundleIdPrefix: com.foodrecall
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+
+targets:
+  Food Recall Checker:
+    type: application
+    platform: iOS
+    sources:
+      - FoodRecall
+    settings:
+      base:
+        INFOPLIST_KEY_NSCameraUsageDescription: "Food Recall needs camera access to scan barcodes on food products."
+        INFOPLIST_KEY_UILaunchScreen_Generation: true
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
+        INFOPLIST_KEY_CFBundleDisplayName: "Food Recall Checker"
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "6.0"
+        GENERATE_INFOPLIST_FILE: true
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1"
+        PRODUCT_BUNDLE_IDENTIFIER: com.foodrecall.iosapp
+        SWIFT_STRICT_CONCURRENCY: complete
+    info:
+      properties:
+        BGTaskSchedulerPermittedIdentifiers:
+          - com.foodrecall.iosapp.recallcheck
+        UIBackgroundModes:
+          - fetch
