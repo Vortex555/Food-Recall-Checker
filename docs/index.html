@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recall Checker - Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 1.3rem;
+            margin-top: 36px;
+            margin-bottom: 12px;
+        }
+        p, li {
+            font-size: 1rem;
+            color: #424245;
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+        a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .header p {
+            color: #86868b;
+            font-size: 1.1rem;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+        .contact-btn {
+            display: inline-block;
+            background: #0071e3;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            margin-top: 8px;
+        }
+        .contact-btn:hover {
+            background: #0077ed;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            color: #86868b;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Food Recall Checker</h1>
+            <p>Support &amp; Help</p>
+        </div>
+
+        <div class="card">
+            <h2>How It Works</h2>
+            <p>Food Recall Checker scans food barcodes and checks them against the FDA's enforcement database to see if a product has been recalled. You can also search by product name or browse the latest recalls.</p>
+        </div>
+
+        <div class="card">
+            <h2>Frequently Asked Questions</h2>
+            <p><strong>Where does the recall data come from?</strong></p>
+            <p>All recall data comes directly from the FDA's openFDA enforcement database, a public government data source.</p>
+
+            <p><strong>Why does a product show "No Recall Found"?</strong></p>
+            <p>This means the product did not match any current recalls in the FDA database. Note that the database may not contain every recall immediately upon announcement.</p>
+
+            <p><strong>How do notifications work?</strong></p>
+            <p>When you enable notifications for a favorited item, the app periodically checks for new recalls in the background and alerts you if that product is affected.</p>
+
+            <p><strong>Does the app require an account?</strong></p>
+            <p>No. The app works entirely without an account or sign-up.</p>
+
+            <p><strong>What barcode types are supported?</strong></p>
+            <p>UPC-A, EAN-13, EAN-8, and UPC-E barcodes are supported.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact Support</h2>
+            <p>If you're experiencing an issue or have a question, please reach out:</p>
+            <a class="contact-btn" href="https://github.com/Vortex555/Food-Recall-Checker/issues/new">Submit an Issue</a>
+        </div>
+
+        <div class="card">
+            <h2>Privacy</h2>
+            <p>Food Recall Checker does not collect, store, or share any personal data. All scanned items are stored locally on your device. Network requests are made only to the FDA and Open Food Facts public APIs to look up product and recall information.</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Daniel. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
